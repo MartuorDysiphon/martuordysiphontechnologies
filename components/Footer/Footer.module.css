@@ -23,7 +23,6 @@
 .logoMark {
   width: 36px;
   height: 36px;
-  background: var(--accent-blue);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;

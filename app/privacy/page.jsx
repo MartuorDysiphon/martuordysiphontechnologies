@@ -160,14 +160,14 @@ export default function PrivacyPolicy() {
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <path d="M22 6l-10 7L2 6"/>
                 </svg>
-                <span>martuordysiphon@gmail.com</span>
+                <span>katlegomorwamohube@protonmail.com</span>
               </li>
               <li>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M12 2a10 10 0 0 0-10 10c0 7 10 14 10 14s10-7 10-14a10 10 0 0 0-10-10z"/>
                   <circle cx="12" cy="12" r="3"/>
                 </svg>
-                <span>Based in South Africa</span>
+                <span>South Africa</span>
               </li>
             </ul>
           </section>

@@ -2,6 +2,7 @@
 
 import styles from './Footer.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -19,13 +20,11 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.footerBrand}>
-            <div className={styles.brandLogo}>
+            <div className={styles.brandLogo}>              
               <div className={styles.logoMark}>
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-                  <path d="M6 24L16 8l10 16" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M12 18l4-6 4 6" stroke="currentColor" strokeWidth="2" fill="none"/>
-                </svg>
+                <img src="/assets/logo/logo.svg" width={50} height={50} alt="logo" />
               </div>
+              
               <span className={styles.brandName}>Martuor Dysiphon</span>
             </div>
             <p className={styles.brandDesc}>
@@ -50,19 +49,15 @@ export default function Footer() {
               <h4 className={styles.linkTitle}>Connect</h4>
               <ul>
                 <li><a href="#contact" onClick={(e) => handleLinkClick(e, '#contact')}>Contact</a></li>
-                <li><a href="https://github.com/MartuorDysiphon">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/katlego-morwamohube-a0a804197/">LinkedIn</a></li>
+                <li><a href="https://github.com/MartuorDysiphon" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/katlego-morwamohube-a0a804197/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               </ul>
             </div>
             <div className={styles.linkColumn}>
               <h4 className={styles.linkTitle}>Legal</h4>
               <ul>
-                <Link href="../Privacy/PrivaryPolicy">
-                  Privacy Policy
-                </Link>
-                <Link href="../Terms/Terms">
-                  Terms of Service
-                </Link>
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms of Service</Link></li>
               </ul>
             </div>
           </div>

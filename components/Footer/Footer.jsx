@@ -3,9 +3,6 @@
 import styles from './Footer.module.css'
 import Link from 'next/link'
 
-import privacy from '../Privacy/PrivaryPolicy'
-import terms from '../Terms/Terms'
-
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 

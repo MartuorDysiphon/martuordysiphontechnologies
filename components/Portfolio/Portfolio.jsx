@@ -61,10 +61,10 @@ export default function Portfolio() {
                 <path d="M4 12h16M12 4v16M12 4L8 8M12 4l4 4"/>
               </svg>
             </div>
-            <div className={styles.viewMoreContent} >
-                    <h3 className={styles.viewMoreTitle}>View All Projects</h3>
-                    <p className={styles.viewMoreDesc}>Check out my complete portfolio for more case studies and client work.</p>
-                    <a href="https://www.katlegomorwamohube.site/#projects" className={styles.viewMoreBtn}>Explore All Projects →</a>
+            <div className={styles.viewMoreContent}>
+              <h3 className={styles.viewMoreTitle}>View All Projects</h3>
+              <p className={styles.viewMoreDesc}>Check out my complete portfolio for more case studies and client work.</p>
+              <a href="https://www.katlegomorwamohube.site/#projects" className={styles.viewMoreBtn}>Explore All Projects →</a>
             </div>
           </div>
         </div>

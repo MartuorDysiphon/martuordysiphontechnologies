@@ -1,0 +1,158 @@
+.teamIntro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.teamIntro.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.tagLine {
+  width: 32px;
+  height: 2px;
+  background: var(--accent-blue);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.highlight {
+  color: var(--accent-blue);
+}
+
+.sectionSub {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.teamContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  transition-delay: 0.2s;
+}
+
+.teamCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.teamPhoto {
+    background-image: url(../../public/assets/team/katlegomj.jpg);
+    background-size: cover;
+}
+
+.teamInfo {
+  padding: 2rem;
+}
+
+.teamName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.teamRole {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.teamBio {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.teamSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.portfolioButton {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+  background: var(--accent-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.portfolioButton:hover {
+  background: var(--accent-blue-dark);
+  transform: translateY(-2px);
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .teamCard {
+    grid-template-columns: 1fr;
+  }
+  
+  .teamPhoto {
+    min-height: 440px;
+  }
+}

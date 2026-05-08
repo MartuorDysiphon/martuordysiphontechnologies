@@ -1,0 +1,126 @@
+.testimonials {
+  background: var(--text-primary);
+  color: white;
+}
+
+.testimonialsIntro {
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.testimonialsIntro.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-blue-light);
+  margin-bottom: 1rem;
+}
+
+.tagLine {
+  width: 32px;
+  height: 2px;
+  background: var(--accent-blue-light);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.highlight {
+  color: var(--accent-blue-light);
+}
+
+.testimonialsGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.testimonialCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonialCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.rating {
+  font-size: 0.875rem;
+  color: #fbbf24;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.authorInitial {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.authorName {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem;
+}
+
+.authorRole {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+}

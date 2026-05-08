@@ -1,0 +1,190 @@
+.hero {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroLayout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroLeft {
+  max-width: 600px;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-blue-soft);
+  padding: 0.375rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  margin-bottom: 1.5rem;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.highlightText {
+  color: var(--accent-blue);
+  position: relative;
+  display: inline-block;
+}
+
+.highlightText::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: rgba(30, 64, 175, 0.15);
+  z-index: -1;
+}
+
+.heroSub {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.codeWindow {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-light);
+}
+
+.codeHeader {
+  background: var(--bg-tertiary);
+  padding: 0.875rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.codeDots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dotRed, .dotYellow, .dotGreen {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dotRed { background: #ef4444; }
+.dotYellow { background: #f59e0b; }
+.dotGreen { background: #10b981; }
+
+.codeFile {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.codeBody {
+  padding: 1.5rem;
+  min-height: 320px;
+  background: var(--bg-secondary);
+}
+
+.codeLine {
+  display: flex;
+  gap: 1rem;
+  font-family: monospace;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.2s ease;
+}
+
+.codeLine.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lineNum {
+  color: var(--text-light);
+  user-select: none;
+  min-width: 32px;
+}
+
+.highlight {
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+
+.terminalFooter {
+  background: #0f172a;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.termPrompt {
+  color: #10b981;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.termText {
+  color: #94a3b8;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@media (max-width: 1024px) {
+  .heroLayout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .heroLeft {
+    max-width: 100%;
+  }
+}

@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation/Navigation'
 import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
-  title: 'Martuor Dysiphon | Software Engineering & Secure Systems',
+  title: 'Martuor Dysiphon Technologies',
   description: 'Building secure, dependable digital systems for businesses that need technology they can trust. Based in South Africa, serving globally.',
   keywords: 'software engineering, cybersecurity, system architecture, South Africa, web development',
   authors: [{ name: 'Katlego MJ' }],

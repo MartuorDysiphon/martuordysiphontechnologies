@@ -1,6 +1,6 @@
 import './globals.css'
-import Navigation from '@/pages/Navigation/Navigation'
-import Footer from '@/pages/Footer/Footer'
+import Navigation from '@/components/Navigation/Navigation'
+import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Martuor Dysiphon | Software Engineering & Secure Systems',

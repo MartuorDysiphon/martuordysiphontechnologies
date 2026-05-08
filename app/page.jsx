@@ -1,13 +1,13 @@
 'use client'
 
-import Hero from '@/pages/Hero/Hero'
-import Marquee from '@/pages/Marquee/Marquee'
-import About from '@/pages/About/About'
-import Portfolio from '@/pages/Portfolio/Portfolio'
-import Services from '@/pages/Services/Services'
-import Team from '@/pages/Team/Team'
-import Testimonials from '@/pages/Testimonials/Testimonials'
-import Contact from '@/pages/Contact/Contact'
+import Hero from '@/components/Hero/Hero'
+import Marquee from '@/components/Marquee/Marquee'
+import About from '@/components/About/About'
+import Portfolio from '@/components/Portfolio/Portfolio'
+import Services from '@/components/Services/Services'
+import Team from '@/components/Team/Team'
+import Testimonials from '@/components/Testimonials/Testimonials'
+import Contact from '@/components/Contact/Contact'
 
 export default function Home() {
   return (

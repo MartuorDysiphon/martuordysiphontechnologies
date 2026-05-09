@@ -59,7 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <h1 className={styles.heroTitle}>
-              Systems Of The New <span className={styles.highlightText}> Generations.</span>
+              Systems of the new <span className={styles.highlightText}> Generation.</span>
             </h1>
             <p className={styles.heroSub}>
               We build secure, robust software for businesses that need technology they can trust. 

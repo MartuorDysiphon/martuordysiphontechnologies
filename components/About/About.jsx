@@ -17,12 +17,12 @@ export default function About() {
               Our Story
             </div>
             <h2 className={styles.sectionTitle}>
-              From curiosity to <span className={styles.highlight}>engineering.</span>
+              From curiosity to <span className={styles.highlight}>Engineering.</span>
             </h2>
             
             <div className={styles.storyBlock}>
               <p className={styles.storyText}>
-                Martuor Dysiphon started in 2022, built on a simple belief: technology should solve real problems, not create new ones. What began as personal curiosity about how systems work evolved into a proper engineering practice.
+                Martuor Dysiphon started in 2026, built on a simple belief: technology should solve real problems, not create new ones. What began as personal curiosity about how systems work evolved into a proper engineering practice.
               </p>
               <p className={styles.storyText}>
                 I'm Katlego MJ, the person behind this company. I've spent years learning networking, security, and software architecture not just through courses, but by building things, breaking things, and figuring out what actually works in production.
@@ -70,7 +70,7 @@ export default function About() {
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M12 6v6l4 2"/>
                 </svg>
-                <span className={styles.sinceYear}>Est. 2022</span>
+                <span className={styles.sinceYear}>Est. 2026</span>
               </div>
             </div>
             <div className={styles.imageCaption}>

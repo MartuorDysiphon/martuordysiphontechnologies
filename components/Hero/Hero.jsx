@@ -62,8 +62,7 @@ export default function Hero() {
               Systems of the new <span className={styles.highlightText}> Generation.</span>
             </h1>
             <p className={styles.heroSub}>
-              We build secure, robust software for businesses that need technology they can trust. 
-              No fancy marketing speak, just solid engineering and solutions that last.
+              We deliver secure, reliable technology solutions for businesses. Software, infrastructure, cybersecurity, data systems, hardware support, and design built for performance, stability, and long term use.
             </p>
             <div className={styles.heroCtas}>
               <button 
